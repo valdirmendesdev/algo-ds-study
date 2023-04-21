@@ -41,7 +41,7 @@ func TestMonthAvailability_CheckIfDayIsAvailable(t *testing.T) {
 		},
 	}
 	for _, test := range tests {
-		assert.Equal(t, test.ExpectedValue, test.Month.IsDayAvailable(test.CheckedDay), fmt.Sprintf("month %032b checking day %v", test.Month, test.CheckedDay))
+		assert.Equal(t, test.ExpectedValue, test.Month.IsDayAvailable(test.CheckedDay), fmt.Sprintf("month %s checking day %v", test.Month, test.CheckedDay))
 	}
 }
 
